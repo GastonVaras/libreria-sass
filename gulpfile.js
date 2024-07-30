@@ -9,14 +9,14 @@ const purgecss = require('gulp-purgecss')
 
 // Cada vez que se hacen cambios en sass se corre la funcion buildStyles para actualizar los archivos css
 function buildStyles() {
-  return src('sass/**/*.scss')
+  return src('Libreria-SASS/**/*.scss')
     .pipe(sass({ outputStyle: 'compressed' }))
     .pipe(purgecss({ content: ['*.html'] }))
     .pipe(dest('style'))
 }
 
 function watchTask() {
-  watch(['sass/**/*.scss', '*.html'], buildStyles)
+  watch(['Libreria-SASS/**/*.scss', '*.html'], buildStyles)
 }
 
 exports.default = series(buildStyles, watchTask)
