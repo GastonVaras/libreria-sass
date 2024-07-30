@@ -1,0 +1,107 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/style/index.css">
+  <title>Landing page con Libreria</title>
+</head>
+
+<body>
+
+  <!-- navbar -->
+  <nav class="navbar justify-between">
+    <div class="container">
+      <h1 class="site-title">Gastón Varas</h1>
+      <ul class="display-f">
+        <li class="ml-1 text-hover-secondary"><a href="#work">Nuestros servicios</a></li>
+        <li class="ml-1 text-hover-secondary"><a href="#about">¡Contactame!</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- intro -->
+  <div class="container mt-2 ca">
+    <div class="row justify-center">
+      <div class="col-12-xs col-5-md">
+        <h2>
+          <div class="font-xxl">El estilo de esta landing page fue hecho </div>
+          <div class="font-xxl text-secondary">unicamente añadiendo clases a los elementos!</div>
+        </h2>
+        <p class="text-gray mt-2 mb-3">Las clases a utilizar se generan con SASS.</p>
+        <a href="#work" class="btn-outlined-secondary text-secondary text-hover-white">Boton inactivo</a>
+      </div>
+      <div class="col-12-xs col-5-md">
+        <img src="/img/laptop.svg" alt="">
+      </div>
+    </div>
+  </div>
+
+  <!-- about -->
+  <section id="about" class="bg-secondary-light-9 mt-2 pt-2 pb-4">
+    <div class="container">
+      <h2 class="mb-2">Diseño reactivo</h2>
+      <p>Por medio de clases establecemos un sistema de grilla para las diferentes resoluciones, prueba ajustando la
+        página!</p>
+      <p>Damos estilo al div "container" con las clases "bg-secondary-light-9", establece su color a la $variable creada
+        mezclada con un 90% de blanco. Podria ser "bg-primary-dark-1". Esta amplia gama de opciones la tenemos gracias a
+        SASS usando un mapa de color. </p>
+      <p class="mt-1">Otros elementos como margen, padding, colores, botones y mucho mas fueron creados utilizando
+        mixins, funciones y elementos integrados de SASS para tener una libreria con mas de 4000 líneas de código!</p>
+      <p class="mt-1">Sin embargo para ahorrar espacio por medio de gulp podemos filtrar esta enorme libreria a las
+        clases que fueron efectivamente utilizadas, de este modo hacemos el codigo final facil de interpretar.</p>
+    </div>
+  </section>
+
+  <!-- work section -->
+  <section id="work" class="mt-5">
+    <div class="container">
+      <h2 class="mb-2">Las siguientes cartas tambien fueron estilizadas con clases:</h2>
+      <div class="row gap-2">
+        <div class="col-12-xs col-6-md col-3-lg">
+          <div class="card p-0">
+            <h3 class="card-title m-1">
+              Mario<span class="badge-orange text-white ml-1">nuevo</span>
+            </h3>
+            <img src="/img/mario.png" alt="">
+            <p class="m-1">La clase "badge-orange" es la clase utilizada para la medalla de: nuevo.</p>
+          </div>
+        </div>
+        <div class="col-12-xs col-6-md col-3-lg">
+          <div class="card p-0">
+            <h3 class="card-title m-1">Food</h3>
+            <img src="/img/food.png" alt="">
+            <p class="m-1">Este parrafo tiene la clase "m-1" que establece su margen en .75rem.</p>
+          </div>
+        </div>
+        <div class="col-12-xs col-6-md col-3-lg">
+          <div class="card p-0">
+            <h3 class="card-title m-1">Just Add Marmite</h3>
+            <img src="/img/marmite.png" alt="">
+            <p class="m-1">El titulo de la carta utiliza la clase "card-title" para su formato.</p>
+          </div>
+        </div>
+        <div class="col-12-xs col-6-md col-3-lg">
+          <div class="card p-0">
+            <h3 class="card-title m-1">Notes</h3>
+            <img src="/img/notes.png" alt="">
+            <p class="m-1">A menor resolucion las cartas se apilaran unas a otras.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-center mt-2">
+        <button class="btn-secondary text-white font-md">Boton inactivo</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer -->
+  <footer class="bg-gray-light-7 pt-3 pb-3 mt-5">
+    <div class="container">
+      copyright 2023 Gastón Varas
+    </div>
+  </footer>
+</body>
+
+</html>
